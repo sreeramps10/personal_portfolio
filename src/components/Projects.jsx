@@ -16,18 +16,18 @@ export default function Projects() {
         </div>
 
         <div className="projects__subsection">
-          <h3 className="projects__subsection-title">Design Assignments</h3>
+          <h3 className="projects__subsection-title">Projects</h3>
           <div className="projects__grid">
-            {assignmentProjects.map((project) => (
+            {engineeringProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
         </div>
 
         <div className="projects__subsection">
-          <h3 className="projects__subsection-title">Projects</h3>
+          <h3 className="projects__subsection-title">Design Assignments</h3>
           <div className="projects__grid">
-            {engineeringProjects.map((project) => (
+            {assignmentProjects.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
