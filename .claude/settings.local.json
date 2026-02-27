@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(cd /c/Sreeram/Sreeram/Projects/personal_website && npm install 2>&1)",
+      "Bash(cd /c/Sreeram/Sreeram/Projects/personal_website && npm run build 2>&1)"
+    ]
+  }
+}
