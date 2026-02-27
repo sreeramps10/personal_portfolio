@@ -19,6 +19,11 @@ export default function ProjectCard({ project }) {
 
   return (
     <div className="project-card" style={{ '--accent': accent }}>
+      {project.image && (
+        <div className="project-card__image">
+          <img src={project.image} alt={project.title} />
+        </div>
+      )}
       <div className="project-card__accent" />
       <div className="project-card__body">
         <span className="project-card__category">{project.category}</span>
