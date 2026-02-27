@@ -1,36 +1,4 @@
-export const mechanicalProjects = [
-  {
-    id: 1,
-    title: 'Vertical Climbing Robot',
-    category: 'Robotics',
-    description:
-      'Design of a vertical climbing robot system for automated warehousing, centred on a spring-loaded pinion aligner mechanism that ensures continuous rack engagement across an 8-ft track. An Aluminium 6061 sliding block, constrained by twin linear guide rails and pushed by a compression spring, houses a 12 mm axle on 6001 series bearings across a 60 mm span. The AISI 4140 (QT) rack uses Module-3 teeth at a 20° pressure angle, manufactured in 1.6 ft modular segments joined by H7-tolerance dowel pins and M8 Grade-8.8 bolts to maintain pitch continuity. Full BOM, DFA analysis, and manufacturing process plan included; total pinion assembly cost Rs 10,920.',
-    pdfFile: 'Accio Robotics Assignment.pdf',
-  },
-  {
-    id: 2,
-    title: 'Binocular Camera Calibration Setup',
-    category: 'Precision Instrumentation',
-    description:
-      'Calibration instrument to find the parallel-most orientation between two motor-driven rotating cameras using autocollimation principles. A ring light replaces the conventional crosshair reticle, paired with a first-surface mirror mounted 150 mm from the camera, yielding a 40 μm / 0.0000153° positional tolerance derived from D = tan(2θ)K. Three independent verification methods — concentric reflected ring centres, maximum ellipse minor-axis length, and checkerboard-derived principal point — all converge at 16.7° rotation (767 encoder counts) per camera. Matte-black enclosed CAD assembly with a base flatness of ±0.02 mm to suppress stray reflections and vibration.',
-    pdfFile: 'CynLr Assignment.pdf',
-  },
-  {
-    id: 3,
-    title: 'Johnson-Cook Damage Parameters via Jaya Algorithm',
-    category: 'Simulation & Research',
-    description:
-      'Research project to determine Johnson-Cook damage parameters (D1–D5 + damage evolution) for a thin-walled aluminium crash-box tubular structure used in crashworthiness applications. Experimental force-displacement data (0–69.5 mm at 0.5 mm intervals) was digitised from literature using WebPlotDigitizer. 150 randomly generated parameter sets (D1–D5 ∈ [−10, 10], damage evolution ∈ [0, 1]) were each simulated in ABAQUS under quasi-static loading; Python (scikit-learn) computed RMSE between each simulated and experimental force-displacement curve. A 28-coefficient polynomial response surface OBJ(x) = a₀ + Σaᵢvᵢ + Σbᵢⱼvᵢvⱼ was fitted to the RMSE data, and the Jaya metaheuristic algorithm was then applied to minimize this objective function and identify the optimal damage parameter set.',
-    pdfFile: 'Determination of Johnson Cook Damage Parameters using Jaya Algorithm.pdf',
-  },
-  {
-    id: 4,
-    title: 'Wheelchair ISO 7176-1 Static Stability – DOP',
-    category: 'Product Design',
-    description:
-      'Computational verification of ISO 7176-1 static stability for a 19.9 kg wheelchair CAD model (target 20 kg), covering all 16 test conditions — 4 tilt directions × dummy included/excluded × wheels locked/unlocked. Two parallel approaches were used: a Python geometric method (combined COG trigonometry via mass-weighted centre of gravity of wheelchair and 100 kg dummy) and ANSYS FEA (gravity vector rotated to simulate plank incline; axle-wheel contact set frictionless or bonded for unlocked/locked; rough contact patch to prevent sliding). The 100 kg dummy was modelled in 6 body segments (head/neck to feet) with densities from David A. Winter\'s biomechanics data, yielding COG at (192.18, 733, 302.81) mm. AI-model dummy placement gave simulation tipping angles of 13° forward, 15° backward, and 18° sideward against experimental values of 12°, 13°, 17°, and 9°.',
-    pdfFile: 'DOP - Wheelchair Simulation.pdf',
-  },
+export const assignmentProjects = [
   {
     id: 5,
     title: 'Drywall Taping Robot End Effector',
@@ -40,13 +8,32 @@ export const mechanicalProjects = [
     pdfFile: 'Drywall Taping Robot End Effector.pdf',
   },
   {
-    id: 6,
-    title: 'Autonomous Self-Parking Robot',
+    id: 1,
+    title: 'Vertical Climbing Robot',
     category: 'Robotics',
     description:
-      'Differential-drive robot that autonomously detects and parks in a colour-coded bay. Built on a foam-board chassis with 4 TT gear motors driven by a Motor Driver Shield and an Arduino Uno programmed in C++. A TCS3200 colour sensor identifies red parking spots via threshold comparison; an HC-SR04 ultrasonic sensor mounted on an SG90 servo scans 0–180° for obstacle avoidance using lookRight()/lookLeft() pivot logic. Speed is ramped via a for-loop to avoid wheel slip on start-up. Powered by 2× 18650 Li-ion batteries.',
-    pdfFile: 'Final Report (1).pdf',
+      'Design of a vertical climbing robot system for automated warehousing, centred on a spring-loaded pinion aligner mechanism that ensures continuous rack engagement across an 8-ft track. An Aluminium 6061 sliding block, constrained by twin linear guide rails and pushed by a compression spring, houses a 12 mm axle on 6001 series bearings across a 60 mm span. The AISI 4140 (QT) rack uses Module-3 teeth at a 20° pressure angle, manufactured in 1.6 ft modular segments joined by H7-tolerance dowel pins and M8 Grade-8.8 bolts to maintain pitch continuity. Full BOM, DFA analysis, and manufacturing process plan included; total pinion assembly cost Rs 10,920.',
+    pdfFile: 'Accio Robotics Assignment.pdf',
   },
+  {
+    id: 9,
+    title: 'UAV Quick-Release Folding Arm Joint',
+    category: 'Unmanned Systems',
+    description:
+      'Quick-release folding arm joint for a UAV motor arm, designed for a 50 mm arm tube and 60 kg in-flight load. An interference fit with magnetic stop lock enables tool-free folding and clicks rigid for flight. Aluminium 7075 blocks (Type III hard-anodized), PTFE bearings, and stainless steel hinge pins yield a 166 g assembly rated to 2,943 N (2.5× SF). ANSYS FEA (static structural + modal) validated under 3 mm max deformation at design load. Manufactured via 5-axis CNC milling with H7/g6 pin-bore tolerances to eliminate structural play.',
+    pdfFile: 'UNMANND Assignment - Sreeram Padmesh.pdf',
+  },
+  {
+    id: 2,
+    title: 'Binocular Camera Calibration Setup',
+    category: 'Precision Instrumentation',
+    description:
+      'Calibration instrument to find the parallel-most orientation between two motor-driven rotating cameras using autocollimation principles. A ring light replaces the conventional crosshair reticle, paired with a first-surface mirror mounted 150 mm from the camera, yielding a 40 μm / 0.0000153° positional tolerance derived from D = tan(2θ)K. Three independent verification methods — concentric reflected ring centres, maximum ellipse minor-axis length, and checkerboard-derived principal point — all converge at 16.7° rotation (767 encoder counts) per camera. Matte-black enclosed CAD assembly with a base flatness of ±0.02 mm to suppress stray reflections and vibration.',
+    pdfFile: 'CynLr Assignment.pdf',
+  },
+]
+
+export const engineeringProjects = [
   {
     id: 7,
     title: 'Gripper Design',
@@ -64,12 +51,28 @@ export const mechanicalProjects = [
     pdfFile: 'Rack and Pinion Gripper.pdf',
   },
   {
-    id: 9,
-    title: 'UAV Quick-Release Folding Arm Joint',
-    category: 'Unmanned Systems',
+    id: 4,
+    title: 'Wheelchair ISO 7176-1 Static Stability – DOP',
+    category: 'Product Design',
     description:
-      'Quick-release folding arm joint for a UAV motor arm, designed for a 50 mm arm tube and 60 kg in-flight load. An interference fit with magnetic stop lock enables tool-free folding and clicks rigid for flight. Aluminium 7075 blocks (Type III hard-anodized), PTFE bearings, and stainless steel hinge pins yield a 166 g assembly rated to 2,943 N (2.5× SF). ANSYS FEA (static structural + modal) validated under 3 mm max deformation at design load. Manufactured via 5-axis CNC milling with H7/g6 pin-bore tolerances to eliminate structural play.',
-    pdfFile: 'UNMANND Assignment - Sreeram Padmesh.pdf',
+      'Computational verification of ISO 7176-1 static stability for a 19.9 kg wheelchair CAD model (target 20 kg), covering all 16 test conditions — 4 tilt directions × dummy included/excluded × wheels locked/unlocked. Two parallel approaches were used: a Python geometric method (combined COG trigonometry via mass-weighted centre of gravity of wheelchair and 100 kg dummy) and ANSYS FEA (gravity vector rotated to simulate plank incline; axle-wheel contact set frictionless or bonded for unlocked/locked; rough contact patch to prevent sliding). The 100 kg dummy was modelled in 6 body segments (head/neck to feet) with densities from David A. Winter\'s biomechanics data, yielding COG at (192.18, 733, 302.81) mm. AI-model dummy placement gave simulation tipping angles of 13° forward, 15° backward, and 18° sideward against experimental values of 12°, 13°, 17°, and 9°.',
+    pdfFile: 'DOP - Wheelchair Simulation.pdf',
+  },
+  {
+    id: 3,
+    title: 'Johnson-Cook Damage Parameters via Jaya Algorithm',
+    category: 'Simulation & Research',
+    description:
+      'Research project to determine Johnson-Cook damage parameters (D1–D5 + damage evolution) for a thin-walled aluminium crash-box tubular structure used in crashworthiness applications. Experimental force-displacement data (0–69.5 mm at 0.5 mm intervals) was digitised from literature using WebPlotDigitizer. 150 randomly generated parameter sets (D1–D5 ∈ [−10, 10], damage evolution ∈ [0, 1]) were each simulated in ABAQUS under quasi-static loading; Python (scikit-learn) computed RMSE between each simulated and experimental force-displacement curve. A 28-coefficient polynomial response surface OBJ(x) = a₀ + Σaᵢvᵢ + Σbᵢⱼvᵢvⱼ was fitted to the RMSE data, and the Jaya metaheuristic algorithm was then applied to minimize this objective function and identify the optimal damage parameter set.',
+    pdfFile: 'Determination of Johnson Cook Damage Parameters using Jaya Algorithm.pdf',
+  },
+  {
+    id: 6,
+    title: 'Autonomous Self-Parking Robot',
+    category: 'Robotics',
+    description:
+      'Differential-drive robot that autonomously detects and parks in a colour-coded bay. Built on a foam-board chassis with 4 TT gear motors driven by a Motor Driver Shield and an Arduino Uno programmed in C++. A TCS3200 colour sensor identifies red parking spots via threshold comparison; an HC-SR04 ultrasonic sensor mounted on an SG90 servo scans 0–180° for obstacle avoidance using lookRight()/lookLeft() pivot logic. Speed is ramped via a for-loop to avoid wheel slip on start-up. Powered by 2× 18650 Li-ion batteries.',
+    pdfFile: 'Final Report (1).pdf',
   },
 ]
 

@@ -455,6 +455,25 @@ button {
 }
 
 /* ==================== MECHANICAL PROJECTS GRID ==================== */
+.projects__subsection {
+  margin-bottom: 56px;
+}
+
+.projects__subsection:last-child {
+  margin-bottom: 0;
+}
+
+.projects__subsection-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
